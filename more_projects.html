@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase</title>
+    <link rel="stylesheet" href="projects_styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <span><a href="./index.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;Back to Home</a> </span>
+        </div>
+    </header>
+
+    <!-- Website Designs Section -->
+    <section id="website-designs">
+        <h2>More Designs</h2>
+        <div class="projects-g">
+            <!-- <div class="more-projects"> -->
+            <!-- Project Card -->
+            <div class="project-card">
+                <img src="assets/safeherbanner.png" alt="Project 1">
+            </div>
+            <div class="project-card">
+                <img src="assets/servicebanner.png" alt="Project 2">
+            </div>
+            <div class="project-card">
+                <img src="assets/klbanner.png" alt="Project 3">
+            </div>
+            <div class="project-card">
+                <img src="assets/praesentia.png" alt="Project 4">
+            </div>
+            <div class="project-card">
+                <img src="assets/atten-admin panel.png" alt="Project 4">
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-beat" style="color: #B197FC;"></i><br>
+                    <h5>
+                        linkedin</h5>
+
+                    <!-- <img src="./assets/linkedin.png" alt="LinkedIn"></a> -->
+                    <a href="https://github.com" target="_blank">
+                        <i class="fa-brands fa-github fa-beat" style="color: #B197FC;"></i><br>
+                        <h5>
+                            github</h5>
+
+
+                        <!-- <img src="./assets/github.png" alt="GitHub"></a> -->
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-dribbble fa-beat" style="color: #B197FC;"></i><br>
+                            <h5>
+                                dribbble</h5>
+
+                            <!-- <img src="./assets/twitter.png" alt="Twitter"></a> -->
+            </div>
+            <p>© 2024 Sayonika. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Button click animation
+const ctaBtn = document.querySelector('.cta-btn');
+ctaBtn.addEventListener('click', () => {
+  ctaBtn.classList.add('clicked');
+  setTimeout(() => {
+    ctaBtn.classList.remove('clicked');
+  }, 300);
+});
+
+    </script>
+</body>
+</html>
